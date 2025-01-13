@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA Calculator</title>
+    <style>
+        body {
+            background-color: #e6ccff; /* Light purple */
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #marksForm {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h2 {
+            margin-bottom: 20px;
+            color: #800080; /* Purple text for heading */
+        }
+        label {
+            display: inline-block;
+            width: 100px;
+            text-align: left;
+            font-weight: bold;
+        }
+        input {
+            margin-bottom: 15px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 200px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #800080; /* Purple button */
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #6a006a; /* Darker purple */
+        }
+    </style>
+</head>
+<body>
+    <form id="marksForm" action="result.php" method="POST">
+        <h2>Enter Marks for 5 Subjects</h2>
+
+        <label>Subject 1:</label>
+        <input type="number" name="marks[]" required><br>
+
+        <label>Subject 2:</label>
+        <input type="number" name="marks[]" required><br>
+
+        <label>Subject 3:</label>
+        <input type="number" name="marks[]" required><br>
+
+        <label>Subject 4:</label>
+        <input type="number" name="marks[]" required><br>
+
+        <label>Subject 5:</label>
+        <input type="number" name="marks[]" required><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<?php include("conn.php"); ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            background-color: #e6ccff; 
+            font-family: Arial, sans-serif;
+            color: #333333;
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+            height: 100vh;  
+            margin: 0; 
+        }
+        table {
+            border-collapse: collapse;
+            background-color: #ffffff;  
+            color: #333333;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 8px;
+            width: 50%;  
+        }
+        h1 {
+            text-align: center;
+            color: #800080;  
+        }
+        td {
+            padding: 10px;
+            text-align: left;  
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select {
+            width: 95%;  
+            padding: 8px;
+            border: 1px solid #bdc3c7;
+            border-radius: 5px;
+            background-color: #f8f9fa;
+            color: #333333;
+        }
+        input[type="submit"], input[type="reset"] {
+            width: 48%;  
+            padding: 10px;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"] {
+            background-color: #800080;  
+        }
+        input[type="submit"]:hover {
+            background-color: #6a006a;  
+        }
+        input[type="reset"] {
+            background-color: #800080;  
+        }
+        input[type="reset"]:hover {
+            background-color: #6a006a;  
+        }
+        
+        .inline-options {
+            display: flex;
+            gap: 10px;  
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-between;  
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="2">
+                <h1>Student Registration Form</h1>
+            </td>
+        </tr>
+        <form action="view.php" method="post">
+            <tr>
+                <td><label for="firstname">First Name</label></td>
+                <td><input type="text" name="firstname" id="firstname" required></td>
+            </tr>
+            <tr>
+                <td><label for="lastname">Last Name</label></td>
+                <td><input type="text" name="lastname" id="lastname" required></td>
+            </tr>
+            <tr>
+                <td><label for="id">Student ID</label></td>
+                <td><input type="text" name="id" id="id" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input type="email" name="email" id="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password</label></td>
+                <td><input type="password" name="password" id="password" required></td>
+            </tr>
+            <tr>
+                <td><label for="dob">Date of Birth</label></td>
+                <td><input type="date" name="dob" id="dob" required></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Gender</label></td>
+                <td>
+                    <div class="inline-options">
+                        <input type="radio" name="gender" id="genderMale" value="Male"> Male
+                        <input type="radio" name="gender" id="genderFemale" value="Female"> Female
+                        <input type="radio" name="gender" id="genderOther" value="Other"> Other
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="religion">Religion</label></td>
+                <td>
+                    <div class="inline-options">
+                        <input type="radio" name="religion" id="muslim" value="Islam"> Muslim
+                        <input type="radio" name="religion" id="hindu" value="Hindu"> Hindu
+                        <input type="radio" name="religion" id="otherReligion" value="Other"> Other
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="department">Department</label></td>
+                <td>
+                    <select name="department" id="department">
+                        <option value="CSE">CSE</option>
+                        <option value="EEE">EEE</option>
+                        <option value="CE">CE</option>
+                        <option value="ELL">ELL</option>
+                        <option value="LLB">LLB</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="button-container">
+                        <input type="submit" value="Register" name="register">
+                        <input type="reset" value="Clear" name="clear">
+                    </div>
+                </td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>

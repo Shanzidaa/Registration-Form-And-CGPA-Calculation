@@ -1,0 +1,25 @@
+I am Mst. Shanzida Akter Lubna. I completed this project during my 5th semester. It is a very simple project. 'Student Registration and CGPA Calculation System' is a web-based application that allows users to register students by capturing their personal details, storing them in a database, and calculating their academic performance using a CGPA calculation module.
+Tools and Technologies Used:
+•	Frontend: HTML, CSS
+•	Backend: PHP
+•	Database: MySQL
+•	Server: Localhost (XAMPP/WAMP/LAMP)
+•	IDE/Text Editor: Visual Studio Code/Notepad++
+•	Web Browser: Google Chrome/Firefox
+The website is designed as a comprehensive Student Registration and CGPA Calculation System. It serves two main purposes: allowing users to register with their personal details and providing a platform to calculate their average CGPA based on subject marks.
+Features:
+1.Student Registration Form (index.html):
+•	Captures student details using form elements such as text inputs, radio buttons, checkboxes, and dropdowns.
+•	Data is sent to the backend using the POST method.
+2. Database Connection (conn.php):
+•	Establishes a connection with the MySQL database using PHP's mysqli_connect function.
+•	Inserts form data into the form table in the reg database.
+3. View Submitted Data (view.php):
+•	Fetches submitted data from the form and displays it in a tabular format.
+4. CGPA Calculator (cgpa.html):
+•	Accepts marks for five subjects as input.
+•	Validates the inputs before submission.
+5. CGPA Calculation (result.php):
+•	Converts marks into a CGPA using a grading scale.
+•	Calculates the average CGPA across all subjects.
+•	Displays the final CGPA to the user.
