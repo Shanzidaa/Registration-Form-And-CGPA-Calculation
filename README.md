@@ -1,1 +1,2 @@
-# Registration-Form-And-CGPA-Calculation
+# Registration-Form-And-CGPA-Calculation 
+The "Student Registration and CGPA Calculation System" is a web-based application that allows users to register students by capturing their personal details, storing them in a database, and calculating their academic performance using a CGPA calculation module. This system integrates PHP for backend operations and MySQL for database management, providing a user-friendly interface and reliable performance.
